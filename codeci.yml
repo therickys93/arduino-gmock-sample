@@ -1,0 +1,4 @@
+image: therickys93/ubuntu14cpp
+script:
+  - cd test
+  - bash build.sh

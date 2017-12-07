@@ -16,7 +16,7 @@ target_link_libraries(arduino_mock_sample
     ${ARDUINO_MOCK_LIBS_DIR}/lib/gtest/gtest/src/gtest-build/libgtest.a
     ${ARDUINO_MOCK_LIBS_DIR}/lib/gmock/gmock/src/gmock-build/libgmock.a
     ${ARDUINO_MOCK_LIBS_DIR}/dist/lib/libarduino_mock.a
-    ${CMAKE_THREAD_LIBS_INIT}
+    pthread
 )
 
 add_dependencies(arduino_mock_sample arduino_mock)
