@@ -1,4 +1,5 @@
-image: therickys93/ubuntu14cpp
+image: therickys93/ubuntu14arduino
 script:
   - cd test
   - bash build.sh
+  - arduino-builder -verbose -build-options-file $ARDUINO_PATH/build.options.json ../DigitalReadSerial.ino
